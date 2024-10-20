@@ -1,5 +1,7 @@
 # JavaScript Cheatsheet for Beginners
 
+![](https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg?tx=w_1920,q_auto)
+
 ## Table of Contents
 1. [Variable Declaration](#variable-declaration)
 2. [Basic Data Types](#basic-data-types)
