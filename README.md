@@ -5,17 +5,18 @@
 ## Table of Contents
 1. [Variable Declaration](#variable-declaration)
 2. [Basic Data Types](#basic-data-types)
-3. [Objects](#objects)
-4. [Functions](#functions)
-5. [Arrays](#arrays)
-6. [Conditional Statements](#conditional-statements)
-7. [Loops](#loops)
-8. [Error Handling](#error-handling)
-9. [ES6+ Features](#es6-features)
-10. [DOM Manipulation](#dom-manipulation)
-11. [Event Handling](#event-handling)
-12. [Asynchronous JavaScript](#asynchronous-javascript)
-13. [Modules](#modules)
+3. [Operators](#operators)
+4. [Objects](#objects)
+5. [Functions](#functions)
+6. [Arrays](#arrays)
+7. [Conditional Statements](#conditional-statements)
+8. [Loops](#loops)
+9. [Error Handling](#error-handling)
+10. [ES6+ Features](#es6-features)
+11. [DOM Manipulation](#dom-manipulation)
+12. [Event Handling](#event-handling)
+13. [Asynchronous JavaScript](#asynchronous-javascript)
+14. [Modules](#modules)
 
 ## Variable Declaration
 
@@ -53,6 +54,94 @@ let bigInt = 1234567890123456789012345678901234567890n; // BigInt (ES11+)
 - `Undefined`: Represents a variable that has been declared but not assigned a value.
 - `Symbol`: Represents a unique identifier.
 - `BigInt`: Represents integers larger than 2^53 - 1.
+
+## Operators
+JavaScript includes various types of operators for different operations.
+
+```javascript
+// Arithmetic Operators
+let sum = 5 + 3;      // Addition: 8
+let diff = 10 - 4;    // Subtraction: 6
+let product = 3 * 4;  // Multiplication: 12
+let quotient = 15 / 3;// Division: 5
+let remainder = 17 % 5;// Modulus: 2
+let power = 2 ** 3;   // Exponentiation: 8
+let increment = 5;
+increment++;          // Increment: 6
+let decrement = 5;
+decrement--;          // Decrement: 4
+
+// Assignment Operators
+let x = 10;           // Basic assignment
+x += 5;               // Addition assignment (x = x + 5)
+x -= 3;               // Subtraction assignment
+x *= 2;               // Multiplication assignment
+x /= 4;               // Division assignment
+x %= 3;               // Modulus assignment
+x **= 2;              // Exponentiation assignment
+
+// Comparison Operators
+console.log(5 == "5");   // Equal to (with type coercion): true
+console.log(5 === "5");  // Strictly equal to: false
+console.log(7 != "7");   // Not equal to: false
+console.log(7 !== "7");  // Strictly not equal to: true
+console.log(10 > 5);     // Greater than: true
+console.log(10 >= 10);   // Greater than or equal to: true
+console.log(5 < 10);     // Less than: true
+console.log(5 <= 5);     // Less than or equal to: true
+
+// Logical Operators
+let a = true, b = false;
+console.log(a && b);     // Logical AND: false
+console.log(a || b);     // Logical OR: true
+console.log(!a);         // Logical NOT: false
+
+// Nullish Coalescing Operator (ES2020)
+let nullValue = null;
+let defaultValue = nullValue ?? "default"; // "default"
+
+// Optional Chaining Operator (ES2020)
+let user = {
+    address: {
+        street: "123 Main St"
+    }
+};
+console.log(user?.address?.street); // "123 Main St"
+console.log(user?.contact?.email);  // undefined
+
+// Bitwise Operators
+console.log(5 & 3);      // Bitwise AND: 1
+console.log(5 | 3);      // Bitwise OR: 7
+console.log(5 ^ 3);      // Bitwise XOR: 6
+console.log(~5);         // Bitwise NOT: -6
+console.log(5 << 1);     // Left shift: 10
+console.log(5 >> 1);     // Right shift: 2
+console.log(5 >>> 1);    // Unsigned right shift: 2
+
+// String Operators
+let str1 = "Hello";
+let str2 = "World";
+console.log(str1 + " " + str2); // Concatenation: "Hello World"
+let greeting = "Hello";
+greeting += " World";    // Concatenation assignment
+
+// Type Operators
+console.log(typeof "Hello");     // "string"
+console.log(typeof 123);         // "number"
+console.log(typeof true);        // "boolean"
+console.log(obj instanceof Object); // Check if object is instance of a class
+```
+
+Key points about operators:
+- Arithmetic operators perform mathematical operations
+- Assignment operators combine operation with assignment
+- Comparison operators return boolean values
+- Logical operators work with boolean values and provide short-circuit evaluation
+- Nullish coalescing (??) provides a way to specify a default value
+- Optional chaining (?.) safely accesses nested object properties
+- Bitwise operators perform operations on binary representations
+- String operators handle string concatenation
+- Type operators help determine variable types
 
 ## Objects
 
